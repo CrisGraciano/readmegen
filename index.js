@@ -34,9 +34,10 @@ const promptUser =
         },
         {
             type: 'list',
-            name: 'lisence',
+            name: 'license',
             message: 'Select any licenses for this Project.',
             choices: [
+                "none",
                 "Apache",
                 "Academic",
                 "GNU",
