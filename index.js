@@ -68,7 +68,7 @@ const promptUser =
 function writeToFile(data) {
     const filename = "./dist/README.md";
 
-    fs.writeFile(filename, data);
+    writeFile(filename, data);
 }
 
 // TODO: Create a function to initialize app

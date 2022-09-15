@@ -57,7 +57,7 @@ function generateMarkdown(data) {
 
   markdown += "## Table of Contents";
   for (let i = 0; i < section.length; i++) {
-    if (! (sections[i] === 'License' && data.license === 'none')) {
+    if (! (section[i] === 'License' && data.license === 'none')) {
       markdown += i + 1 + '. [' + section[i] + '](#' + section[i][0].toLowerCase() + section[i].substring(1) + ')';
 
     }
