@@ -10,6 +10,31 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  let licenselink;
+
+  switch(license) {
+    default:
+      licenselink = '';
+    case 'Apache':
+      licenselink = 'https://www.apache.org/licenses/LICENSE-2.0.html'
+    case 'Academic':
+      licenselink = ''
+    case 'GNU':
+      licenselink = ''
+    case 'ISC':
+      licenselink = ''
+    case 'MIT':
+      licenselink = ''
+    case 'Mozilla':
+      licenselink = ''
+    case 'Open':
+      licenselink = ''    
+  }
+}
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
