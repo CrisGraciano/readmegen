@@ -5,6 +5,7 @@ Because this was a readme file, i had to do some research in order to get the co
 My readmefile is a little bland and not styled as some others I have came across but it uses the data taken from the command line and makes a file!
 
 Here is the link to the video showing the functionallity:
+[Untitled_ Sep 19, 2022 9_56 PM (1).webm](https://user-images.githubusercontent.com/108714738/191161478-641dedb8-c328-4749-abc6-2592de43e2af.webm)
 
 Here is a GIF showing the video:
 ![Alt text](Untitled_ Sep 19, 2022 9_56 PM.gif)
