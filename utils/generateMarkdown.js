@@ -53,40 +53,40 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   const section = ['Description', 'Installation', 'Usage', 'Contributions', 'License', 'Tests', 'Github', 'Email'];
 
-  let markdown = '#' + data.title + '#';
+  let markdown = '#' + data.title + '#' + "\n";
 
-  markdown += "## Table of Contents";
+  markdown += "## Table of Contents\n";
   for (let i = 0; i < section.length; i++) {
     if (! (section[i] === 'License' && data.license === 'none')) {
-      markdown += i + 1 + '. [' + section[i] + '](#' + section[i][0].toLowerCase() + section[i].substring(1) + ')';
+      markdown += i + 1 + '. [' + section[i] + '](#' + section[i][0].toLowerCase() + section[i].substring(1) + ')\n';
 
     }
   } 
   markdown += '\n';
 
-  markdown += '##' + section[0];
-  markdown += data.description;
+  markdown += '##' + section[0] + '\n';
+  markdown += data.description + '\n';
 
-  markdown += '##' + section[1];
-  markdown += data.installation;
+  markdown += '##' + section[1] + '\n';
+  markdown += data.installation + '\n';
 
-  markdown += '##' + section[2];
+  markdown += '##' + section[2] + '\n';
   markdown += data.usage;
 
-  markdown += '##' + section[3];
-  markdown += data.contributions;
+  markdown += '##' + section[3] + '\n';
+  markdown += data.contributions + '\n';
 
-  markdown += '##' + section[4];
-  markdown += data.license;
+  markdown += '##' + section[4] + '\n';
+  markdown += data.license + '\n';
 
-  markdown += '##' + section[5];
-  markdown += data.test;
+  markdown += '##' + section[5] + '\n';
+  markdown += data.test + '\n';
 
-  markdown += '##' + section[6];
-  markdown += data.github;
+  markdown += '##' + section[6] + '\n';
+  markdown += data.github + '\n';
 
-  markdown += '##' + section[7];
-  markdown += data.email;
+  markdown += '##' + section[7] + '\n';
+  markdown += data.email + '\n';
 
   return markdown;
 
